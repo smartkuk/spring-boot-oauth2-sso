@@ -6,17 +6,23 @@
     <groupId>com.juanzero</groupId>
     <artifactId>spring-boot-oauth2-sso</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
 
     <name>spring-boot-oauth2-sso</name>
     <description>Demo project for Spring Boot using oauth2 sso</description>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.4.RELEASE</version>
-        <relativePath/> <!-- lookup parent from repository -->
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-parent</artifactId>
+      <version>1.5.4.RELEASE</version>
+      <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    
+    <modules>
+      <module>sample-auth-server</module>
+      <module>sample-resource-server</module>
+      <module>sample-ui-server</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
